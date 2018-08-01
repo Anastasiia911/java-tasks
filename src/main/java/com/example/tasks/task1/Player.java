@@ -6,10 +6,6 @@ import lombok.AllArgsConstructor;
 public class Player {
     private String name;
 
-    public Player(String playerName){
-        this.name= playerName;
-    }
-
     public void action(Weapon weaponType) {
         if (weaponType == Weapon.KNIFE) {
             System.out.println("Perform knife attack");

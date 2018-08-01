@@ -10,5 +10,4 @@ public class Main {
         player.action(Weapon.REVOLVER);
         player.action(Weapon.PLASMAGUN);
     }
-
 }
