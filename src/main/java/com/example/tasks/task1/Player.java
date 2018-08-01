@@ -1,13 +1,16 @@
 package com.example.tasks.task1;
 
-import lombok.Value;
+import lombok.AllArgsConstructor;
 
-@Value
+@AllArgsConstructor
 public class Player {
-    private Weapon weaponType;
     private String name;
 
-    public void action() {
+    public Player(String playerName){
+        this.name= playerName;
+    }
+
+    public void action(Weapon weaponType) {
         if (weaponType == Weapon.KNIFE) {
             System.out.println("Perform knife attack");
         } else {
